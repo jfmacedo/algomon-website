@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   font-family: 'Cinzel', serif;
   color: #f7e9c6;
-  background-image: url('background.jpg');
+  background-image: url('background2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -59,8 +59,8 @@ body::before {
 .top-nav {
   width: calc(100% - 44px);
   margin: 22px auto 0;
-  height: 104px;
-  padding: 0 34px;
+  min-height: 80px;
+  padding: 8px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,10 +83,15 @@ body::before {
 }
 
 .nav-logo img {
-  width: 235px;
+  width: 260px;
   height: auto;
   display: block;
   filter: drop-shadow(0 0 10px rgba(161, 255, 208, 0.25));
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -140,8 +145,8 @@ nav a.active::after {
 }
 
 .play-button {
-  padding: 18px 42px;
-  font-size: 1.25rem;
+  padding: 12px 28px;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 1.5px;
   clip-path: polygon(10% 0, 90% 0, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0 75%, 0 25%);
@@ -176,7 +181,7 @@ main {
 }
 
 .hero-logo {
-  width: 610px;
+  width: 700px;
   max-width: 90%;
   filter:
     drop-shadow(0 0 18px rgba(104, 255, 190, 0.28))
