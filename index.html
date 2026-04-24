@@ -1,102 +1,102 @@
-<!-- Video explanation: https://drive.google.com/drive/folders/1gPsNHqaJlmu5busdtEru-wZrry9LZrAe?usp=sharing -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <title>Algomon</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algomon</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    
-    <div id="particles-js"></div>
+  <div class="page-overlay"></div>
 
-    <header>
-        <h1>Welcome to Algomon</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="battle-tips.html">Battle Tips</a></li>
-                <li><a href="lore-legends.html">Lore & Legends</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="top-nav">
+    <div class="nav-logo">
+      <img src="algomon-banner2.JPG" alt="Algomon Logo" />
+    </div>
 
-    <main>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="battle-tips.html">Battle Tips</a></li>
+        <li><a href="lore-legends.html">Lore & Legends</a></li>
+      </ul>
+    </nav>
 
-    <header>
+    <a href="#featured" class="play-button">
+      Play Now <span>✦</span>
+    </a>
+  </header>
 
-    <img src="algomon-banner2.JPG" alt="Banner of game Algomon" class="banner">
+  <main>
+    <section class="hero">
+      <img src="algomon-banner2.JPG" alt="Algomon" class="hero-logo" />
 
-</header>
-    </main>
+      <h2>Discover. Train. Battle. Become Legend.</h2>
 
-<section class="login">
-    <h2>Login to your Account</h2>
-    <form>
-        <label for="username">Username</label>
-        <input type="text" id="username" placeholder="Enter your username">
+      <div class="divider">
+        <span></span>
+        ✧
+        <span></span>
+      </div>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password">
+      <p>
+        Step into a magical world where elemental creatures called Algomons
+        fight by your side. Discover your bond, train your companion,
+        and become the ultimate Algomon Master.
+      </p>
 
-        <button type="button">Login</button>
-        <p class="register-link"> Don't have an Account? <a href="#">Register here</a></p>
-    </form>
-</section>
+      <a href="#featured" class="main-button">
+        Start Your Journey <span>🍃</span>
+      </a>
+    </section>
 
-<section class="quiz">
-    <h2>Discover Your Algomon</h2>
-    <p>Answer these questions and find out which magical companion matches your soul!</p>
-    <form id="personalityQuiz">
-      <label>1. Which Dublin tour do you prefer?</label><br>
-      <input type="radio" name="q1" value="fire"> Pub crawl through Temple Bar at night<br>
-      <input type="radio" name="q1" value="water"> Afternoon on St. Stephen’s Green<br>
-      <input type="radio" name="q1" value="earth"> Jameson Distillery Tour and Tasting Bow St.<br>
-      <input type="radio" name="q1" value="air"> Watch a play at the Abbey Theatre<br><br>
-  
-      <label>2. How do you face challenges?</label><br>
-      <input type="radio" name="q2" value="fire"> Head-on, with courage<br>
-      <input type="radio" name="q2" value="earth"> Calmly and strategically<br>
-      <input type="radio" name="q2" value="air"> Creatively and with flexibility<br>
-      <input type="radio" name="q2" value="water"> With empathy and intuition<br><br>
-  
-      <label>3. How would you describe yourself?</label><br>
-      <input type="radio" name="q3" value="air"> Balanced and graceful<br>
-      <input type="radio" name="q3" value="fire"> Intense and brave<br>
-      <input type="radio" name="q3" value="earth"> Protective and strong<br>
-      <input type="radio" name="q3" value="water"> Dreamy and sensitive<br><br>
-  
-      <label>4. Which quote resonates with you the most?</label><br>
-      <input type="radio" name="q4" value="fire"> "I follow my heart, no matter the risk."<br>
-      <input type="radio" name="q4" value="water"> "I understand others, even in silence."<br>
-      <input type="radio" name="q4" value="earth"> "With patience, anything can grow."<br>
-      <input type="radio" name="q4" value="air"> "Balance is my greatest strength."<br><br>
-  
-      <label>5. What do you value most in a friendship?</label><br>
-      <input type="radio" name="q5" value="earth"> Loyalty and protection<br>
-      <input type="radio" name="q5" value="air"> Harmony and good conversations<br>
-      <input type="radio" name="q5" value="fire"> Adventure and excitement<br>
-      <input type="radio" name="q5" value="water"> Care and emotional connection<br><br>
-  
-      <button type="submit">Reveal My Algomon</button>
-    </form>
-    <div id="resultDisplay"></div>
-  </section>
+    <section id="featured" class="info-panel">
+      <div class="panel-column">
+        <h3><span></span> Featured <span></span></h3>
 
-<footer>
-    <p>&copy; 2025 Algomon Team</p>
-</footer>
+        <div class="featured-content">
+          <img src="rabbit4.jpg" alt="Algomons" />
 
-<script src="script.js"></script>
+          <div>
+            <h4>Meet the Algomons</h4>
+            <p>
+              Four elements. Four spirits.
+              One unbreakable bond.
+            </p>
+            <a href="gallery.html" class="small-button">View Gallery</a>
+          </div>
+        </div>
+      </div>
 
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="particles-config.js"></script>
+      <div class="vertical-line"></div>
 
+      <div class="panel-column">
+        <h3><span></span> Latest News <span></span></h3>
+
+        <div class="news-content">
+          <img src="rabbit5.jpg" alt="Magic Crystal" />
+
+          <div>
+            <h4>A New Adventure Begins</h4>
+            <p>
+              Version 1.0.0 is coming soon!
+              Get ready for an epic journey.
+            </p>
+            <a href="lore-legends.html" class="small-button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-text">
+      <p>Scroll to Explore</p>
+      <span>⌄</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
+</html>
