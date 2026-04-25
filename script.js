@@ -94,7 +94,15 @@ function updateCharacter() {
 
   characterName.textContent = character.name;
   characterSubtitle.textContent = character.subtitle;
+  characterImage.style.opacity = 0;
+characterImage.style.transform = "scale(0.9)";
+
+setTimeout(() => {
   characterImage.src = character.image;
+
+  characterImage.style.opacity = 1;
+  characterImage.style.transform = "scale(1)";
+}, 200);
   characterImage.alt = character.name;
 
   weaponImage.src = character.weaponImage;
