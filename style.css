@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
   font-family: 'Cinzel', serif;
   color: #f7e9c6;
-  background-image: url('background2.jpg');
+  background-image: url('assets/images/background2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -447,7 +447,7 @@ main {
 /* CHARACTER SELECTION PAGE */
 
 .characters-page {
-  background-image: url('characters-background.png');
+  background-image: url('assets/images/characters-background.png');
 }
 
 .character-select {
@@ -688,7 +688,7 @@ main {
 /* ABOUT PAGE */
 
 .about-page {
-  background-image: url('about-background.jpg');
+  background-image: url('assets/images/about-background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -699,7 +699,7 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 5px 0 70px 90px;
+  padding: 35px 0 70px 90px;
 }
 
 .about-text-box {

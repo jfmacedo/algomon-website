@@ -2,10 +2,10 @@ const characters = [
   {
     name: "Flamaris",
     subtitle: "Fire Element Warrior",
-    image: "flamaris.png",
-    weaponImage: "flamaris-weapon.png",
+    image: "assets/images/flamaris.png",
+    weaponImage: "assets/images/flamaris-weapon.png",
     weaponName: "Flaming Axe",
-    elementImage: "fire-element.png",
+    elementImage: "assets/images/fire-element.png",
     elementName: "Fire",
     story: "Flamaris is a brave fire Algomon with an impulsive spirit. He carries a flaming axe and faces every challenge with courage and determination.",
     stats: {
@@ -18,10 +18,10 @@ const characters = [
   {
     name: "Terracorn",
     subtitle: "Earth Element Guardian",
-    image: "terracorn.png",
-    weaponImage: "terracorn-weapon.png",
+    image: "assets/images/terracorn.png",
+    weaponImage: "assets/images/terracorn-weapon.png",
     weaponName: "Earth Hammer",
-    elementImage: "earth-element.png",
+    elementImage: "assets/images/earth-element.png",
     elementName: "Earth",
     story: "Terracorn is a strong and protective Algomon connected to the earth. His powerful hammer represents discipline, loyalty, and defense.",
     stats: {
@@ -34,10 +34,10 @@ const characters = [
   {
     name: "Aurelibra",
     subtitle: "Air Element Duelist",
-    image: "aurelibra.png",
-    weaponImage: "aurelibra-weapon.png",
+    image: "assets/images/aurelibra.png",
+    weaponImage: "assets/images/aurelibra-weapon.png",
     weaponName: "Celestial Sword",
-    elementImage: "air-element.png",
+    elementImage: "assets/images/air-element.png",
     elementName: "Air",
     story: "Aurelibra is graceful, balanced, and strategic. With her wings and sword, she uses the power of air to move with elegance and precision.",
     stats: {
@@ -50,10 +50,10 @@ const characters = [
   {
     name: "Piscyra",
     subtitle: "Water Element Mystic",
-    image: "piscyra.png",
-    weaponImage: "piscyra-weapon.png",
+    image: "assets/images/piscyra.png",
+    weaponImage: "assets/images/piscyra-weapon.png",
     weaponName: "Blue Trident",
-    elementImage: "water-element.png",
+    elementImage: "assets/images/water-element.png",
     elementName: "Water",
     story: "Piscyra is a dreamy and intuitive water Algomon. Her trident channels magical water energy, making her calm, sensitive, and powerful.",
     stats: {
