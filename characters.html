@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="characters-page">
   <div class="page-overlay"></div>
 
   <header class="top-nav">
@@ -25,115 +25,73 @@
       </ul>
     </nav>
 
-    <a href="characters.html" class="play-button">
-      Meet Them <span>✦</span>
-    </a>
+    <a href="#" class="play-button">Select <span>✦</span></a>
   </header>
 
-  <main>
-    <section class="characters-hero">
-      <h1>Main Characters</h1>
-      <p>
-        Meet the four elemental Algomons who protect the magical forest.
-        Each one has unique powers, strengths, and personality.
+  <main class="character-select">
+
+    <section class="character-title">
+      <h1 id="characterName">Flamaris</h1>
+      <p id="characterSubtitle">Fire Element Warrior</p>
+    </section>
+
+    <section class="character-screen">
+
+      <aside class="power-panel">
+        <h2>Stats</h2>
+
+        <div class="stat">
+          <p>Power <span id="powerValue">90%</span></p>
+          <div class="bar"><span id="powerBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <p>Health <span id="healthValue">75%</span></p>
+          <div class="bar"><span id="healthBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <p>Speed <span id="speedValue">70%</span></p>
+          <div class="bar"><span id="speedBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <p>Magic <span id="magicValue">80%</span></p>
+          <div class="bar"><span id="magicBar"></span></div>
+        </div>
+      </aside>
+
+      <button class="arrow-btn left" id="prevCharacter">‹</button>
+
+      <div class="character-center">
+        <img id="characterImage" src="flamaris.png" alt="Flamaris" />
+      </div>
+
+      <button class="arrow-btn right" id="nextCharacter">›</button>
+
+      <aside class="equipment-panel">
+        <div class="info-box">
+          <h3>Weapon</h3>
+          <img id="weaponImage" src="flamaris-weapon.png" alt="Flamaris weapon" />
+          <p id="weaponName">Flaming Axe</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Element</h3>
+          <img id="elementImage" src="fire-element.png" alt="Fire element" />
+          <p id="elementName">Fire</p>
+        </div>
+      </aside>
+
+    </section>
+
+    <section class="story-panel">
+      <h2>Character Story</h2>
+      <p id="characterStory">
+        Flamaris is a brave fire Algomon with an impulsive spirit. He carries a flaming axe and faces every challenge with courage and determination.
       </p>
     </section>
 
-    <section class="characters-grid">
-
-      <article class="character-card fire">
-        <img src="rabbit1.jpg" alt="Flamaris" />
-        <div class="character-content">
-          <span class="element">Fire Element</span>
-          <h2>Flamaris</h2>
-          <p>
-            A brave and impulsive Algomon with a burning spirit.
-            Flamaris uses fire-based attacks and fights with courage.
-          </p>
-
-          <div class="stats">
-            <p><strong>Power:</strong> 90</p>
-            <div><span style="width: 90%;"></span></div>
-
-            <p><strong>Speed:</strong> 75</p>
-            <div><span style="width: 75%;"></span></div>
-
-            <p><strong>Defense:</strong> 60</p>
-            <div><span style="width: 60%;"></span></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="character-card water">
-        <img src="rabbit2.jpg" alt="Piscyra" />
-        <div class="character-content">
-          <span class="element">Water Element</span>
-          <h2>Piscyra</h2>
-          <p>
-            A sensitive and magical Algomon connected to water and intuition.
-            Piscyra is calm, caring, and powerful in support abilities.
-          </p>
-
-          <div class="stats">
-            <p><strong>Magic:</strong> 95</p>
-            <div><span style="width: 95%;"></span></div>
-
-            <p><strong>Speed:</strong> 70</p>
-            <div><span style="width: 70%;"></span></div>
-
-            <p><strong>Defense:</strong> 65</p>
-            <div><span style="width: 65%;"></span></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="character-card earth">
-        <img src="rabbit3.jpg" alt="Terracorn" />
-        <div class="character-content">
-          <span class="element">Earth Element</span>
-          <h2>Terracorn</h2>
-          <p>
-            A strong and protective Algomon with a powerful connection to the earth.
-            Terracorn is loyal, resistant, and excellent in defense.
-          </p>
-
-          <div class="stats">
-            <p><strong>Power:</strong> 85</p>
-            <div><span style="width: 85%;"></span></div>
-
-            <p><strong>Defense:</strong> 95</p>
-            <div><span style="width: 95%;"></span></div>
-
-            <p><strong>Speed:</strong> 45</p>
-            <div><span style="width: 45%;"></span></div>
-          </div>
-        </div>
-      </article>
-
-      <article class="character-card air">
-        <img src="rabbit4.jpg" alt="Aurelibra" />
-        <div class="character-content">
-          <span class="element">Air Element</span>
-          <h2>Aurelibra</h2>
-          <p>
-            A graceful and balanced Algomon who controls the power of air.
-            Aurelibra is fast, elegant, and strategic in battle.
-          </p>
-
-          <div class="stats">
-            <p><strong>Speed:</strong> 95</p>
-            <div><span style="width: 95%;"></span></div>
-
-            <p><strong>Magic:</strong> 80</p>
-            <div><span style="width: 80%;"></span></div>
-
-            <p><strong>Defense:</strong> 60</p>
-            <div><span style="width: 60%;"></span></div>
-          </div>
-        </div>
-      </article>
-
-    </section>
   </main>
 
   <script src="script.js"></script>
