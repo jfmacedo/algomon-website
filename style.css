@@ -444,3 +444,148 @@ main {
     font-size: 1rem;
   }
 }
+
+/* CHARACTERS PAGE */
+
+.characters-hero {
+  max-width: 850px;
+  margin: 80px auto 50px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.characters-hero h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #f7e9c6;
+  text-shadow: 0 0 18px rgba(93, 255, 188, 0.5);
+}
+
+.characters-hero p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f1dfc1;
+}
+
+.characters-grid {
+  width: 1200px;
+  max-width: 92%;
+  margin: 0 auto 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.character-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 24px;
+  padding: 22px;
+  background: rgba(1, 13, 12, 0.82);
+  border: 1px solid rgba(199, 159, 87, 0.75);
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.75),
+    inset 0 0 25px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 0 28px rgba(83, 255, 184, 0.35),
+    inset 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+.character-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border: 1px solid rgba(199, 159, 87, 0.55);
+}
+
+.character-content h2 {
+  margin: 10px 0 12px;
+  font-size: 1.8rem;
+  color: #ffe3a5;
+  text-transform: uppercase;
+}
+
+.character-content p {
+  color: #f1dfc1;
+  line-height: 1.6;
+}
+
+.element {
+  color: #7dffd2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.stats {
+  margin-top: 18px;
+}
+
+.stats p {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.stats div {
+  width: 100%;
+  height: 8px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.stats div span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #56ffbc, #ffe3a5);
+  box-shadow: 0 0 12px rgba(86, 255, 188, 0.8);
+}
+
+.fire {
+  border-color: rgba(255, 120, 70, 0.75);
+}
+
+.water {
+  border-color: rgba(80, 190, 255, 0.75);
+}
+
+.earth {
+  border-color: rgba(160, 120, 60, 0.75);
+}
+
+.air {
+  border-color: rgba(220, 240, 255, 0.75);
+}
+
+@media (max-width: 900px) {
+  .characters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .character-card {
+    grid-template-columns: 1fr;
+  }
+
+  .character-card img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .characters-hero h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .character-card {
+    padding: 18px;
+  }
+}
