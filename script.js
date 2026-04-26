@@ -149,3 +149,56 @@ if (prevButton && nextButton) {
 
   updateCharacter();
 }
+
+const worlds = [
+  {
+    name: "Algomon Treehouse",
+    image: "assets/images/world-treehouse.png"
+  },
+  {
+    name: "Elemental Armory",
+    image: "assets/images/world-armory.png"
+  },
+  {
+    name: "Crystal Clearing",
+    image: "assets/images/world-crystal.png"
+  },
+  {
+    name: "Algomon Garden",
+    image: "assets/images/world-garden.png"
+  }
+];
+
+let currentWorld = 0;
+
+const worldImg = document.getElementById("worldImage");
+const worldTitle = document.getElementById("worldTitle");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+function updateWorld() {
+  worldImg.style.opacity = "0";
+  worldImg.style.transform = "scale(0.95)";
+
+  setTimeout(() => {
+    worldImg.src = worlds[currentWorld].image;
+    worldTitle.textContent = worlds[currentWorld].name;
+
+    worldImg.style.opacity = "1";
+    worldImg.style.transform = "scale(1)";
+  }, 200);
+}
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener("click", () => {
+    currentWorld--;
+    if (currentWorld < 0) currentWorld = worlds.length - 1;
+    updateWorld();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentWorld++;
+    if (currentWorld >= worlds.length) currentWorld = 0;
+    updateWorld();
+  });
+}
